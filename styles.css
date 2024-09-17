@@ -3,18 +3,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter, sans-serif';
 }
+
+.google-header{
+    font-family: 'Poppins', sans-serif;
+}
+
 
 html {
     font-size: 16px; /* Base font size */
     line-height: 1.5;
 }
 
-body {
-    font-family: Arial, sans-serif; /* Fallback to sans-serif font */
-    background-color: #fff; /* Default background color */
-    color: #333; /* Default text color */
-}
+/* body {
+
+    font-family: Arial, sans-serif; Fallback to sans-serif font
+    background-color: #fff; 
+    color: #333; Default text color
+} */
 
 /* Container for layout purposes */
 .container {
@@ -26,8 +33,37 @@ body {
 
 /* Header styles */
 header {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: row;
     background: #f8f9fa; /* Light background for header */
-    padding: 1rem 0; /* Vertical padding */
+}
+
+.nav-container {
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.image-button {
+
+    border: none;
+    background: transparent;
+
+}
+
+.image-button img {
+
+width: 40px;
+overflow: hidden;
+border-radius: 100%;
+
 }
 
 /* Navigation styles */
