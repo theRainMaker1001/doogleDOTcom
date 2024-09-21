@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter, sans-serif';
+    color: #0f172a;
 }
 
 .google-header{
@@ -36,6 +37,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+button {
+
+    cursor: pointer;
 }
 
 /* Header styles */
@@ -92,7 +98,7 @@ header {
 
 .image-button img {
 
-width: 60px;
+width: 40px;
 overflow: hidden;
 border-radius: 100%;
 
@@ -132,8 +138,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     padding: 1rem;
+}
+
+.title-text {
+
+    font-size: 4rem;
+
 }
 
 .input-bar {
@@ -142,10 +154,17 @@ main {
     align-items: center;
     gap: 1rem;
     width: 80%;
+    border: 1px solid lightslategray;
+    border-radius: 20px;
+    padding: 1rem;
+    overflow: hidden;
+
 }
 
 .input-bar input {
     flex: 1;
+    border: none;
+    outline: none;
 }
 
 .input-bar div {
@@ -153,6 +172,20 @@ main {
     display: flex;
     align-items: center;
     gap: 1rem;
+
+}
+
+.input-bar:hover,
+.input-bar:focus-within,
+.button-grid button:hover {
+
+    box-shadow: 0 0 4px 1px pink;
+
+} 
+
+.input-icons:hover {
+
+    opacity: 0.1;
 
 }
 
@@ -180,3 +213,29 @@ footer {
 .mb-1 {
     margin-bottom: 0.5rem; /* Margin bottom */
 }
+
+.button-grid {
+
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    
+   
+}
+
+.button-grid button {
+
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: rgb(247, 247, 247);
+    border-radius: .5rem;
+    
+}
+
+
+    
+
+
