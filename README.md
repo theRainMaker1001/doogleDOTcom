@@ -1,2 +1,2 @@
-# htmlCSS
-Basic web stuff, not using JS
+# htmlCSSrefresh
+Front end design in HTML and CSS only, not using my JS skills
